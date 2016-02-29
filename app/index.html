@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Star Rating</title>
+
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/styles.min.css"/>
+</head>
+<body>
+    <div class="info-panel">
+        <h4>Rating Box</h4>
+        <div>
+            <p>This demo shows multiple rating boxes with stars. Stack: HTML, Bootstrap Paper Theme,Jquery, NPM</p>
+            <h4>Problem:</h4>
+            <p>How to go about selecting the stars and how to count the amount of selected stars.</p>
+            <h4>Solution:</h4>
+            <p>Use data-index for each set of rows and same data-index for points row. This will enable the ability select
+            each row of stars by with the data-index as a specifier.</p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <!-- image row -->
+            <div class="row">
+                <div>
+                    <img src="http://www.flickeringmyth.com/wp-content/uploads/2015/12/star-wars-the-force-awakens-quad-poster-600x450.jpg" class="img-thumbnail" alt="movie title the Force awakens"/>
+                </div>
+                <div class="text-center movie-title">The Force Awakens</div>
+
+            </div>
+
+            <!-- rating row-->
+            <div class="row fa-size ratings-row" data-index="1">
+                <div class="col-xs-2 col-xs-offset-1">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="col-xs-2">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="col-xs-2">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="col-xs-2">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="col-xs-2">
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <!-- end rating row -->
+            <div class="row points-row">
+                <div class="col-xs-12 text-center rating-points">
+                    <span id="rate" class="rating-points-current" data-index="1">0</span>/
+                    <span class="rating-points-total">5</span>
+                </div>
+            </div>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-xs-offset-3">
+            <!-- image row -->
+            <div class="row">
+                <div>
+                    <img src="http://i2.wp.com/la-screenwriter.com/wp-content/uploads/2012/08/star-wars-episode-4-advance-poster.jpg?w=1134" class="img-thumbnail" alt="movie title New Hope"/>
+                </div>
+                <div class="text-center movie-title">New Hope</div>
+
+            </div>
+            <!-- rating row-->
+            <div class="row fa-size ratings-row" data-index="2">
+                <div class="col-xs-2 col-xs-offset-1">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="col-xs-2">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="col-xs-2">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="col-xs-2">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="col-xs-2">
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <!-- end rating row -->
+            <div class="row points-row">
+                <div class="col-xs-12 text-center">
+                    <span class="rating-points-current" data-index="2">0</span>/
+                    <span class="rating-points-total">5</span>
+                </div>
+            </div>
+            <div class="divider"></div>
+
+        </div>
+    </div>
+<script src="dist/js/package.min.js"></script>
+</body>
+</html>
